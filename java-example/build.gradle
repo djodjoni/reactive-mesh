@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+dependencies {
+    compile rootProject.ext.rxjava1
+    compile rootProject.ext.rxjava2
+    compile rootProject.ext.reactor
+    compile rootProject.ext.akkaStream
+    runtime files('libs/akka-stream_2.11-2.4.11-sources.jar')
+    testCompile rootProject.ext.junit
+    testCompile rootProject.ext.assertjCore2
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
